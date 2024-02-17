@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2ème Stage BTS SIO</title>
+  <link rel="icon" type="image/x-icon" href="../../img/favicon.ico" />
+  <link rel="stylesheet" href="../../css/mediaqueries.css" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/slideshow.css" />
+</head>
+
+
+<body>
+  <!------------------Navbar--------------------->
+  <div id="navBarProjet">
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a style="text-decoration: none;">2ème Stage BTS SIO</a>
+      </div>
+    </nav>
+  </div>
+
+  <h1 style="padding: 20px;"><a href="../../index.html">⬅ Retour</a></h1>
+
+  <!---------------------------------------------------------------Partie 1---------------------------------------------------------->
+  <section>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+
+          <!-------------------Descriptif--------------------->
+          <div class="text-container">
+            <p>
+              <img width="300" src="../../img/2emeStage/logo.png"><br>
+              <br>Pour ce 1er stage j'ai été au
+              <a href="http://institut-cancerologie-bourgogne.fr/linstitut-2/chalon-sur-saone/">centre de
+                radiothérapie</a> de Chalon, dans le service des physiciens.<br><br>
+              Mon but était de réaliser un script en C#, pour automatiser une double vérification de calcul de niveau de
+              radiation des patients subit lors de leur traitement contre le cancer, sur un logiciel dédié à ça nommé
+              "Monaco".<br>
+              Le logiciel de référence du 1er calcul est un concurrent à ce logiciel, "RayStation" qui permet la même
+              chose.
+            </p>
+          </div>
+        </div>
+        <br>
+        <h2>Les différentes semaines</h2>
+
+        <div class="details-container color-container">
+
+          <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Semaine1')">Semaine 1</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Semaine2')">Semaine 2</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Semaine3')">Semaine 3</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Semaine4')">Semaine 4</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Semaine5')">Semaine 5</button>
+          </div>
+
+
+
+          <!------------------Semaine 1--------------------->
+          <div id="Semaine1" class="w3-container w3-border city" style="text-align:justify;">
+            <p>(4-9 juin)<br><br>
+              <b>Les tâches effectuées :</b><br><br>
+              Découverte de l'établissement, les différentes machines (accélérateurs à particules), présentation de
+              l'équipe de physiciens, et découverte des différents logiciels qu'ils utilisent (et du logiciel que je
+              vais devoir automatiser)
+              <br>
+              Début de la programmation du script pour automatiser un calcul sur le logiciel, (pour faire une double
+              vérification d'un autre logiciel)
+            </p>
+            <br>
+            <br>
+            <p>
+              <b>Les éventuelles difficultés rencontrées :</b><br><br>
+              Je n'avais jamais utilisé ce logiciel ("Monaco", c'est un logiciel de santé professionel qui permet de
+              calculer la quantité de radiation que le patient va recevoir pour traiter son cancer...) donc je ne
+              connaissait aucunes fonctions déjà existante pour ce logiciel, et j'ai eu du mal à comprendre comment on
+              les utilisait.<br>
+              Je n'ai également pas pu faire des fonctionnalités du script demandé, car je n'avais pas la dernière
+              version du fichier regroupant les fonctions déjà existantes du logiciel.
+              <br><br>
+            </p>
+            <img class="img-fluid imgRadio" src="../../img/1erStage/RayStation.png" title="RayStation" />
+            <img class="img-fluid imgRadio" src="../../img/1erStage/Monaco.png" title="Monaco" />
+            <br>
+            <br>
+            <p>
+              <br>
+              <b>Les progrès réalisés :</b><br><br>
+              J'ai compris comment utiliser les fonctions du logiciel et j'ai très bien avancé dans le script
+              demandé.<br>
+          </div>
+
+
+
+
+          <!------------------Semaine 2--------------------->
+          <div id="Semaine2" class="w3-container w3-border city" style="display:none; text-align:justify;">
+            <p>(12-16 juin)<br><br>
+              <b>Les tâches effectuées :</b><br><br>
+              J'ai bien avancé sur le script, j'ai du séparé un form en 2 form car il fallait récupérer des informations
+              une fois une certaine tâche effectué (après avoir choisi une valeur dans le premier form).
+              <br>
+              J'ai travaillé sur l'aspect visuel du Windows Form.
+            </p>
+            <br>
+            <br>
+            <p>
+              <b>Les éventuelles difficultés rencontrées :</b><br><br>
+              J'étais bloqué sur des fonctionnalités demandés, mais il y a eu une mise a jour du logiciel, qui m'a
+              débloqué.<br>
+              J'avais également des problèmes pour reprendre le code des scripts déjà existants mais j'ai réussi à
+              comprendre.
+              <br>
+            </p>
+            <br>
+            <p>
+              <br>
+              <b>Les progrès réalisés :</b><br><br>
+              J'ai quasiment terminé le script demandé, donc je vais avoir d'autres tâches a réaliser.<br>
+          </div>
+
+
+
+          <!------------------Semaine 3--------------------->
+          <div id="Semaine3" class="w3-container w3-border city" style="display:none; text-align:justify;">
+            <p>(19-23 juin)<br><br>
+              <b>Les tâches effectuées :</b><br><br>
+              Résolution de bugs sur le script Monaco<br>
+              Amélioration des éléments graphiques…<br>
+              J’ai reçu une autre tâche sur un Logiciel similaire, c’est un script pour ouvrir pour chaque patient une
+              nouvelle fenêtre avec les bonnes informations.
+              <br>
+            </p>
+            <br>
+            <br>
+            <p>
+              <b>Les éventuelles difficultés rencontrées :</b><br><br>
+              Je n’arrive pas à finir le 1er script, car il y a des fonctions qui ne marchent pas ou que je ne comprends
+              pas, et la personne chargée de m'aider pour les scripts de ce logiciel n’est pas disponible en ce
+              moment.<br>
+              Dans le nouveau script je n’arrive pas à ouvrir les patients dans les nouvelles fenêtres.
+              <br>
+            </p>
+            <br>
+            <p>
+              <br>
+              <b>Les progrès réalisés :</b><br><br>
+              J’ai réussi à comprendre d’où venait un bug qui faisait que parfois le logiciel se mettait en arrière plan
+              quand le script s'exécutait.
+              <br>
+          </div>
+
+
+
+          <!------------------Semaine 4--------------------->
+          <div id="Semaine4" class="w3-container w3-border city" style="display:none; text-align:justify;">
+            <p>(26-30 juin)<br><br>
+              <b>Les tâches effectuées :</b><br><br>
+              Résolution de bugs sur le script Monaco,<br>
+              J’ai fait plein de tests, et j’ai découvert d’autres bug…<br>
+              J’ai avancé sur l’autre script (sur RayStation), j’ai créé une interface graphique (avec Tkinter), qui
+              permet de sélectionner des patients et le médecin que l’on veut.<br>
+              J’ai changé les disques dur d’un pc pour essayer de le réparer (on m’a demandé de l’aide pour le faire).
+              Le PC avait un blue screen.
+            </p>
+            <br>
+            <br>
+            <p>
+              <b>Les éventuelles difficultés rencontrées :</b><br><br>
+              Je n’arrive pas à utiliser la fonction pour modifier des valeurs pour une certaines option dans le
+              logiciel Monaco.<br>
+              J’ai des erreurs qui viennent du fichier de référence pour les scripts sur Monaco qui fonctionnent mal.
+              <br>
+            </p>
+            <br>
+            <p>
+              <br>
+              <b>Les progrès réalisés :</b><br><br>
+              J’ai trouvé comment faire pour sélectionner 2 plan et aller dans une autre fenêtre (pour faire un rapport
+              en pdf après)<br>
+              J’ai résolu des bugs sur l’autre script (python)<br>
+              J’ai très bien avancé sur l’interface graphique du script python.<br>
+          </div>
+
+
+
+          <!------------------Semaine 5--------------------->
+          <div id="Semaine5" class="w3-container w3-border city" style="display:none; text-align:justify;">
+            <p>(3-7 juillet)<br><br>
+              <b>Les tâches effectuées :</b><br><br>
+              Résolution d’un bug sur le script Monaco (qui arrivait sur 1 type de patient rare)<br>
+              J’ai intégré la lecture de fichier .ods (tableur) au script python, pour lire la date de chaque patient,
+              ce qui va permettre de les ranger par ordre des plus urgents.<br>
+              Dans le script python j'ai implémenté différents test pour pas que si un patient est inexistant ou autre
+              cela fasse crasher le script.<br>
+              Ajout d'un onglet pour voir différentes informations.<br>
+              J'ai fait en sorte que les informations soient chargé tous d'un coup au démarrage du script, pour que lors
+              de l'utilisation du script il ne faille pas réactualiser les infos en allant les chercher ne manière non
+              optimisé.<br>
+              J’ai créé une nouvelle interface de “pause” pour résoudre un problème de fonction qui ne fonctionnait pas,
+              et pour remplacer la fonction j’affiche cette fenêtre avec des infos qui vont permettre de faire plus
+              rapidement la tâche attendu.<br>
+              J’ai créé un mode opératoire pour le script Monaco.<br>
+              J’ai retiré 2 fonctionnalités qui allaient causer des problèmes pour au final être quasiment jamais
+              utilisé.<br>
+            </p>
+            <br>
+            <br>
+            <p>
+              <b>Les éventuelles difficultés rencontrées :</b><br><br>
+              J’avais téléchargement une bibliothèque “openpyxl” qui lisait apparemment tous les types de tableur, mais
+              au final j’ai du changer de bibliothèque, j’ai pris “pyexcel-ods”
+              <br>
+            </p>
+            <br>
+            <br>
+            <p>
+              <br>
+              <b>Les progrès réalisés :</b><br><br>
+              J’ai corrigé un bug sur le script Monaco.<br>
+              J’ai terminé tout ce qui m’étaient attribués.<br>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <!-------------------Conclusion--------------------->
+          <div class="text-container">
+            <p>
+              En conclusion de mon premier stage, j'ai eu l'opportunité de travailler sur des langages de programmation que je connaissais déjà, ce qui m'a permis de mettre en pratique mes compétences et d'approfondir mes connaissances. Durant cette expérience, j'ai bénéficié de l'aide de collaborateurs venant de différents pays, tels que Shanghai en Chine et les Pays-Bas, ce qui m'a offert une perspective internationale enrichissante.<br><br>
+              Tout au long du stage, j'ai eu l'occasion d'échanger avec des physiciens sur les modifications à apporter aux scripts que j'ai développés. Ces discussions m'ont permis de comprendre les besoins spécifiques du domaine de la radiologie et d'adapter mes solutions en conséquence. J'ai également pu découvrir les locaux.<br><br>
+              J'ai également eu l'occasion de réparer un ordinateur utilisé pour les traitements des patients et de procéder au remplacement de certains composants. Cette expérience pratique m'a permis d'approfondir mes connaissances en matière de matériel informatique et de comprendre l'importance de maintenir un environnement de travail optimal.<br><br>
+              Tout au long de mon stage, j'ai été confronté à différents problèmes liés aux logiciels et aux scripts, mais j'ai su les résoudre avec méthode et persévérance. J'ai également consacré du temps à l'optimisation du script Python, cherchant à améliorer ses performances et son efficacité.<br><br
+              En conclusion, mon stage m'a offert une expérience enrichissante où j'ai pu mettre en pratique mes connaissances en programmation tout en découvrant le domaine médical de la radiologie. J'ai acquis de nouvelles compétences techniques, développé des solutions logicielles efficaces et appris à collaborer avec des professionnels venant de différents horizons. Ce stage a renforcé ma passion pour la programmation et a confirmé mon désir de poursuivre une carrière dans ce domaine.<br>
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <!----------------Footer--------------------->
+  <footer>
+    <p>Portfolio - Balducci Dorian</p>
+  </footer>
+
+  <script src="../../js/script.js"></script>
+
+</body>
+
+</html>

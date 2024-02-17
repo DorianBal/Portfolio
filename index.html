@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+</head>
+
+
+
+
+
+<body>
+  <!------------------Navbar--------------------->
+  <div id="navBar">
+    <nav id="desktop-nav">
+      <div class="logo"><a href="#profile">Portfolio</a></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Qui suis-je ?</a></li>
+          <li><a href="#stages">Stages</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Profil</a></li>
+          <li><a href="#stages" onclick="toggleMenu()">Stages</a></li>
+          <li><a href="#projets" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!------------------Profil--------------------->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/pp.png" alt="John Doe profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hey, moi c'est</p>
+      <h1 class="title">Balducci Dorian</h1>
+      <p class="section__text__p2">Développeur</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/C.V.pdf')">
+          Telécharger CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">
+          Infos Contact
+        </button>
+      </div>
+    </div>
+  </section>
+
+
+  <!------------------Qui suis-je ?--------------------->
+  <section id="about">
+    <h1 class="title">Qui suis-je ?</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+
+          <!------------------Experience--------------------->
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Stagiaire à ICB Chalon</p>
+          </div>
+
+          <!------------------Education--------------------->
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bac STI2D<br />BTS SIO</p>
+          </div>
+
+        </div>
+
+        <!-------------------Descriptif--------------------->
+        <div class="text-container">
+          <p>
+            Je m'appelle Balducci Dorian<br><br>
+            Je suis actuellement en BTS SIO et j'aime programmer pour rendre la vie des gens plus simple.<br><br>
+            Actuellement je développe un jeux video avec unity...<br><br>
+            <a href="https://miro.com/app/board/uXjVN6V_RrM=/?share_link_id=489471970481">Ma veille informatique</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!----------------Stages--------------------->
+  <section id="stages">
+    <h1 class="title">Stages</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-------------Stage 1--------------------->
+        <div class="details-container">
+          <h2 class="experience-sub-title">1ère année BTS SIO</h2>
+          <div class="article-container">
+            <article>
+              <img src="./img/1erStage/radiotherapie.jpg" width="190" height="135"/>
+            </article>
+            <article>
+              <img src="./assets/langage-code.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Langages utilisés :<br><br>-C#<br>-Python</h3>
+              </div>
+            </article>
+            <article>
+              <p>5/06 - 7/07 2023<br>Au service de radiothérapie
+                <br>- ICB, rue des Sentiers -
+                <br>-71100 Chalon-
+              </p>
+            </article>
+          </div>
+          <br><br>
+          <a href="./Pages/Stages/1erStage.html">En savoir plus</a>
+        </div>
+
+        <!-------------Stage 2--------------------->
+        <div class="details-container">
+          <h2 class="experience-sub-title">2ème année BTS SIO</h2>
+          <div class="article-container">
+            <article>
+              <img src="./img/2emeStage/logo.png" width="190" height="130"/>
+            </article>
+            <article>
+              <img src="./assets/langage-code.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Langages utilisés :<br><br>-HTML<br>-CSS<br>-PHP</h3>
+              </div>
+            </article>
+            <article>
+              <p>4/03 - 5/04 2023<br>chez BWA agency
+                <br>- 13 rue Marguerite Yourcenar -
+                <br>-21000 Dijon-
+              </p>
+            </article>
+          </div>
+          <br>
+          <a href="./Pages/Stages/2emeStage.html">En savoir plus</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!----------------Projets--------------------->
+  <section id="projets">
+    <h1 class="title">Projets</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!----------------Projet Coopenoix------------------>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img style="padding-top: 28px;" src="./img/coopenoix/coopenoixlogo.png" width="200" />
+          </div>
+          <h2 class="experience-sub-title project-title">Coopenoix</h2>
+          <a href="./Pages/Projets/coopenoix.html">En savoir plus</a>
+        </div>
+
+        <!----------------Projet GSB--------------------->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./img/gsb/partie2/logoGSB.png" width="200"/>
+          </div>
+          <h2 class="experience-sub-title project-title">GSB</h2>
+          <a href="./Pages/Projets/gsb.html">En savoir plus</a>
+        </div>
+
+        <!----------------Projet SDIS 29------------------>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./img/sdis29/logo.png" width="100"/>
+          </div>
+          <h2 class="experience-sub-title project-title">SDIS 29</h2>
+          <a href="./Pages/Projets/sdis29.html">En savoir plus</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!----------------Contact--------------------->
+  <section id="contact">
+    <h1 class="title">Me Contacter</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:balducci.dorian.pro@gmail.com">balducci.dorian.pro@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!----------------Footer--------------------->
+  <footer>
+    <p>Portfolio - Balducci Dorian</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
