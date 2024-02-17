@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projet GSB</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="stylesheet" href="css/mediaqueries.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/slideshow.css" />
+</head>
+
+
+<body>
+  <!------------------Navbar--------------------->
+  <div id="navBarProjet">
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img width="75px" src="img/coopenoix/coopenoixlogo.png" width="300" />
+        <a style="text-decoration: none;">Coopenoix</a>
+      </div>
+    </nav>
+  </div>
+
+  <h1 style="padding: 20px;"><a href="./index">⬅ Retour</a></h1>
+
+  <!---------------------------------------------------------------Partie 1---------------------------------------------------------->
+  <section>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+
+          <!-------------------Descriptif--------------------->
+          <div class="text-container">
+            <p>
+              <b>Contexte : </b>Coopenoix est une entreprise de vente de noix, il nous ait demandé ici de faciliter la gestion des commandes de noix.
+              <br><br>
+              <b>Réalisations :</b>
+              <br>
+              - Évolution de la base de données pour permettre la mise en place du nouveau service.
+              <br>- Développement d’une petite application C# permettant à l’atelier d’améliorer l’efficacité de la préparation des commandes. Permettant de visualiser des commandes de noix, d'en sélectionner une et d'en changer son statut.
+            </p>
+          </div>
+        </div>
+        <br>
+
+        <div class="details-container color-container">
+
+          <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Partie1-1')">Choix du menu</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-2')">Affichage des commandes</button>
+            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-3')">Changement du statut</button>
+          </div>
+
+          <!------------------Choix du menu--------------------->
+          <div id="Partie1-1" class="w3-container w3-border city">
+            <div class="gallery">
+              <div class="image moyenImage">
+                <img src="img/coopenoix/1.png">
+                <div class="details moyenDetails">
+                  <p style="color: white;">
+                    Page d'accueil, choisissez un numéro pour choisir un type de commande.
+                  </p>
+                </div>
+              </div>
+              <div class="image moyenImage">
+                <img src="img/coopenoix/4.png">
+                <div class="details moyenDetails">
+                  <p style="color: white;">
+                    Message d'erreur si vous avez entré un numéro inexistant
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <!------------------Affichage des commandes--------------------->
+          <div id="Partie1-2" class="w3-container w3-border city" style="display:none">
+            <div class="gallery">
+              <div class="image grandImage">
+                <img src="img/coopenoix/2.png">
+                <div class="details grandDetails">
+                  <p style="color: white;">
+                    Liste des commandes avec leurs statut
+                  </p>
+                </div>
+              </div>
+              <div class="image moyenImage">
+                <img src="img/coopenoix/6.png">
+                <div class="details moyenDetails">
+                  <p style="color: white;">
+                    Sélectionnez la commande voulu<br>Puis entrez allez à la page de changement de statut
+                  </p>
+                </div>
+              </div>
+              <div class="image moyenImage">
+                <img src="img/coopenoix/5.png">
+                <div class="details moyenDetails">
+                  <p style="color: white;">
+                    Message d'erreur si vous avez entré une commande inexistant
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!------------------Changement du statut--------------------->
+          <div id="Partie1-3" class="w3-container w3-border city" style="display:none">
+            <div class="gallery">
+              <div class="image petiteImage">
+                <img src="img/coopenoix/3.png">
+                <div class="details petitDetails">
+                  <p style="color: white;">
+                    Choix du changement de statut
+                  </p>
+                </div>
+              </div>
+              <div class="image moyenImage">
+                <img src="img/coopenoix/4.png">
+                <div class="details moyenDetails">
+                  <p style="color: white;">
+                    Message d'erreur si vous avez entré un numéro inexistant
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <br>
+
+  <!----------------Footer--------------------->
+  <footer>
+    <p>Portfolio - Balducci Dorian</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+
+</body>
+
+</html>
