@@ -116,32 +116,14 @@
   color: #fff;
   opacity: 0;
   transition: opacity 0.3s ease;
-  padding: 20px;
   box-sizing: border-box;
 }
 
 
 
-.grandImage img {
-  width: 700px;
-}
-
-.moyenImage img {
-  width: 375px;
-}
-
-
-.petiteImage img {
-  width: 250px;
-}
-
 .petitDetails {
   width: 100%;
   height: 60%;
-}
-
-.microImage {
-  width: 20px;
 }
 
 
@@ -156,7 +138,6 @@
 
 .details p {
   margin-bottom: 0;
-  padding: 15px;
   text-align:left;
 }
 
