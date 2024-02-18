@@ -7,6 +7,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 html {
