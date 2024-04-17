@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projet SDIS29</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="img/siteIcon.ico" />
   <link rel="stylesheet" href="css/mediaqueries.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/slideshow.css" />
@@ -14,16 +14,6 @@
 
 
 <body>
-  <!------------------Navbar--------------------->
-  <div id="navBarProjet">
-    <nav id="desktop-nav">
-      <div class="logo">
-        <img width="75px" src="img/sdis29/logo.png" height="80" width="30"/>
-        <a style="text-decoration: none;">Sdis29</a>
-      </div>
-    </nav>
-  </div>
-
   <h1 style="padding: 20px;"><a href="./index">⬅ Retour</a></h1>
 
   <!---------------------------------------------------------------Partie 1---------------------------------------------------------->
@@ -35,6 +25,7 @@
           <!-------------------Descriptif--------------------->
           <div class="text-container">
             <p>
+			  <img width="150px" src="img/sdis29/logo.png"><br><br>
               <b>Contexte : </b>Coopenoix est une entreprise de vente de noix, il nous ait demandé ici de faciliter la gestion des commandes de noix.
               <br><br>
               <b>Réalisations :</b>
@@ -52,37 +43,34 @@
         </div>
         <br>
 
-        <div class="details-container color-container">
+        
+        <div class="w3-bar w3-black">
+          <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Partie1-1')">Page d'authentification</button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-2')">Saisie des disponibilités</button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-3')">Gestion des gardes</button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-4')">Mobilisation d'une équipe pour une intervention</button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-5')">Menu profil et aide</button>
+        </div>
 
-          <div class="w3-bar w3-black">
-            <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Partie1-1')">Page d'authentification</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-2')">Saisie des disponibilités</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-3')">Gestion des gardes</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-4')">Mobilisation d'une équipe pour une intervention</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-5')">Menu profil et aide</button>
-          </div>
+        <div class="details-container color-container">
 
           <!------------------Page d'authentification--------------------->
           <div id="Partie1-1" class="w3-container w3-border city">
-            <div class="gallery">
-              <div class="image moyenImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/sdis29/connexion.png">
-                <div class="details moyenDetails">
-                  <p style="color: white;">
-                    Page d'authentification, au clique sur l'oeil cela met le mot de passe en clair
+                <p>
+                  Page d'authentification, au clique sur l'oeil cela met le mot de passe en clair
                     <br>Si vous avez oublié votre mot de passe, cliquez sur "mot de passe oublié ?"
-                  </p>
-                </div>
+                </p>
               </div>
-              <div class="image moyenImage">
+              <div class="item">
                 <img src="img/sdis29/mdp.png">
-                <div class="details moyenDetails">
-                  <p style="color: white;">
-                    Entrez votre mot de passe pour recevoir un mail de réinitialisation
+                <p>
+                  Entrez votre mot de passe pour recevoir un mail de réinitialisation
                     <br>
                     <br>Si vous vous souvenez de votre mot de passe, cliquez sur "Connectez vous"
-                  </p>
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -107,24 +95,20 @@
 
           <!------------------Gestion des gardes--------------------->
           <div id="Partie1-3" class="w3-container w3-border city" style="display:none">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/sdis29/gardes.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Depuis l’onglet “Mes gardes” vous pouvez voir vos gardes pour la semaine actuelle et les semaines à venir
-                  </p>
-                </div>
+                <p>
+                  Depuis l’onglet “Mes gardes” vous pouvez voir vos gardes pour la semaine actuelle et les semaines à venir
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/sdis29/gardesChef.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Attribution des gardes des pompiers, au clique cela coche ou décoche la case.
+                <p>
+                  Attribution des gardes des pompiers, au clique cela coche ou décoche la case.
                     <br>
                     <br>Si la case est cochée, alors le pompier sera de garde à la tranche d’heure sélectionnée
-                  </p>
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -133,25 +117,21 @@
 
           <!------------------Mobilisation d'une équipe pour une intervention--------------------->
           <div id="Partie1-4" class="w3-container w3-border city" style="display:none">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/sdis29/creationIntervention.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Création d'une intervention en sélectionnant la caserne la plus proche, en renseignant le lieu, le type d'intervention et sa description.
+                <p>
+                  Création d'une intervention en sélectionnant la caserne la plus proche, en renseignant le lieu, le type d'intervention et sa description.
                     <br>
                     <br>Des informations sur le type d'intervention sélectionné est affiché.
                     <br>Liste des pompiers disponible ou au travail qui peuvent être mit en intervention
-                  </p>
-                </div>
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/sdis29/listeIInterventions.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Liste des interventions, avec la possibilité de mettre fin à l'intervention à tout moment
-                  </p>
-                </div>
+                <p>
+                  Liste des interventions, avec la possibilité de mettre fin à l'intervention à tout moment
+                </p>
               </div>
             </div>
           </div>
@@ -160,25 +140,21 @@
 
           <!------------------Menu profil et aide--------------------->
           <div id="Partie1-5" class="w3-container w3-border city" style="display:none">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry masonryLigne">
+              <div class="item">
                 <img src="img/sdis29/profil.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Depuis l’onglet “Mon profil”, vous avez accès à vos informations personnelles.
+                <p>
+                  Depuis l’onglet “Mon profil”, vous avez accès à vos informations personnelles.
                     Les informations peuvent être modifiées en cliquant sur ce bouton : <img style="width: 40px;" src="img/sdis29/modif.png">
-                  </p>
-                </div>
+                </p>
               </div>
-              <div class="image moyenImage">
+              <div class="item">
                 <img src="img/sdis29/aide.png">
-                <div class="details moyenDetails">
-                  <p style="color: white;">
-                    Accessible via le bouton “aide”
+                <p>
+                  Accessible via le bouton “aide”
                     <br><br>
                     Permet d'accéder au mode opératoire du site internet, et à un numéro d’aide, ainsi qu’un email
-                  </p>
-                </div>
+                </p>
               </div>
             </div>
           </div>

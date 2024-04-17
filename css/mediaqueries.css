@@ -9,22 +9,13 @@
     font-size: 18px;
     padding: 10px;
   }
-  .petiteImage img {
-    width: 250px;
-  }  
-  .moyenImage img {
-    width: 375px;
-  }
-  .grandImage img {
-    width: 700px;
-  }  
-  .details{
-    font-size: 20px;
+  .details-container {
     padding: 20px;
   }
-  .details p {
-    padding: 15px;
-  }
+  .petiteImage img {
+    width: 250px;
+    height: 160px;
+  }  
 }
 
 @media screen and (max-width: 1920px) {
@@ -41,9 +32,6 @@
   section{
     margin: 0 2rem;
   }
-  .section-container{
-    width: 85%;
-  }
   .about-containers {
     flex-wrap: wrap;
     margin-top: 20px;
@@ -57,21 +45,9 @@
     padding: 10px;
   }
   .petiteImage img {
-    width: 160px;
+    width: 200px;
+    height: 135px;
   }  
-  .moyenImage img {
-    width: 280px;
-  }
-  .grandImage img {
-    width: 400px;
-  }  
-  .details{
-    font-size: 12px;
-    padding: 10px;
-  }
-  .details p {
-    padding: 8px;
-  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -95,8 +71,7 @@
   section,
   .section-container {
     height: fit-content;
-    /*width: 95%;*/
-    margin: 0 10px;
+    margin: 0 5px;
   }
   section {
     margin: 0 5%;
@@ -110,8 +85,11 @@
     margin-top: 0;
   }
   button{
-    font-size: 15px;
+    font-size: 16px;
     padding: 6px;
+  }
+  .details-container {
+    padding: 15px;
   }
 }
 
@@ -178,23 +156,33 @@
     text-align: justify;
   }
   button{
-    font-size: 12px;
+    font-size: 16px;
     padding: 4px;
+  }
+  
+  .projetsContainer {
+    padding: 10px;
+  }
+
+  .stagesContainer {
+    display: block !important;
+    padding: 10px;
+  }
+
+  .stagesContainer img{
+    width: 150px !important;
+    margin-bottom: 5px !important;
+  }
+
+  .stagesContainer .details-container{
+    margin-bottom: 15px !important;
+  }
+  .w3-container p{
+    padding: 6px;
+    font-size: 14px;
   }
   .petiteImage img {
     width: 100px;
+    height: 90px;
   }  
-  .moyenImage img {
-    width: 160px;
-  }
-  .grandImage img {
-    width: 270px;
-  }  
-  .details{
-    font-size: 8px;
-    padding: 1px;
-  }
-  .details p {
-    padding: 4px;
-  }
 }

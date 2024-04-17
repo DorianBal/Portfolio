@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projet GSB</title>
-  <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+  <link rel="icon" type="image/x-icon" href="img/siteIcon.ico" />
   <link rel="stylesheet" href="css/mediaqueries.css" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/slideshow.css" />
@@ -73,13 +73,12 @@
         </div>
         <br>
 
+        <div class="w3-bar w3-black">
+          <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Partie1-1')">Page d'authentification</button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-2')">Selection et informations d'un médicament</button>
+          <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-3')">Ajout d'une remarque</button>
+        </div>
         <div class="details-container color-container">
-
-          <div class="w3-bar w3-black">
-            <button class="w3-bar-item w3-button tablink w3-red" onclick="openCity(event,'Partie1-1')">Page d'authentification</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-2')">Selection et informations d'un médicament</button>
-            <button class="w3-bar-item w3-button tablink" onclick="openCity(event,'Partie1-3')">Ajout d'une remarque</button>
-          </div>
 
           <!------------------Page d'authentification--------------------->
           <div id="Partie1-1" class="w3-container w3-border city">
@@ -96,35 +95,32 @@
 
           <!------------------Selection et informations d'un médicament--------------------->
           <div id="Partie1-2" class="w3-container w3-border city" style="display:none">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/gsb/partie1/3.1.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">Liste des Groupes de médicament, en fonction du groupe choisi, la liste des
+                <p>
+                  Liste des Groupes de médicament, en fonction du groupe choisi, la liste des
                     familles de
                     médicaments
                     change.
                     <br>Au clique sur une famille une nouvelle page apparaît
                     <br>Vous pouvez sélectionner un médicament directement via la barre de recherche
-                  </p>
-                </div>
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie1/4.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">Liste des médicaments en fonction de la famille choisi
+                <p>
+                  Liste des médicaments en fonction de la famille choisi
                     <br>Cliquez sur la ligne pour choisir un médicament
-                  </p>
-                </div>
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie1/3.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">Informations sur le médicament choisi
+                <p>
+                  Informations sur le médicament choisi
                     <br>Avec les remarques fait par les différents praticiens
                     <br>Cliquez sur le bouton "Ajouter Remarque" pour ajouter une remarque
-                  </p>
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -133,24 +129,20 @@
 
           <!------------------Ajout d'une remarque--------------------->
           <div id="Partie1-3" class="w3-container w3-border city" style="display:none">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/gsb/partie1/5.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Liste pour sélectionner le praticien
+                <p>
+                  Liste pour sélectionner le praticien
                     <br>Zone de texte pour écrire la remarque
                     <br>Bouton pour réinitialiser tous les champs
-                  </p>
-                </div>
+                </p>
               </div>
-              <div class="image petiteImage">
+              <div class="item">
                 <img src="img/gsb/partie1/6.png">
-                <div class="details petitDetails">
-                  <p style="color: white;">
-                    Quand la remarque a été ajoutée, un message apparaît
-                  </p>
-                </div>
+                <p>
+                  Quand la remarque a été ajoutée, un message apparaît
+                </p>
               </div>
             </div>
           </div>
@@ -189,34 +181,31 @@
           </div>
         </div>
 
+        <div class="w3-bar w3-black">
+          <button class="w3-bar-item w3-button tablink2 w3-red" onclick="openCity2(event,'Partie2-1')">Page d'authentification</button>
+          <button class="w3-bar-item w3-button tablink2" onclick="openCity2(event,'Partie2-2')">Ajout d'un compte-rendu</button>
+          <button class="w3-bar-item w3-button tablink2" onclick="openCity2(event,'Partie2-3')">Gestion d'un compte-rendu</button>
+          <button class="w3-bar-item w3-button tablink2" onclick="openCity2(event,'Partie2-4')">Menu profil et aide</button>
+        </div>
         <div class="details-container color-container">
-
-          <div class="w3-bar w3-black">
-            <button class="w3-bar-item w3-button tablink2 w3-red" onclick="openCity2(event,'Partie2-1')">Page d'authentification</button>
-            <button class="w3-bar-item w3-button tablink2" onclick="openCity2(event,'Partie2-2')">Ajout d'un compte-rendu</button>
-            <button class="w3-bar-item w3-button tablink2" onclick="openCity2(event,'Partie2-3')">Gestion d'un compte-rendu</button>
-            <button class="w3-bar-item w3-button tablink2" onclick="openCity2(event,'Partie2-4')">Menu profil et aide</button>
-          </div>
 
           <!------------------Page d'authentification--------------------->
           <div id="Partie2-1" class="w3-container w3-border city2">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/gsb/partie2/1.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">Page d'authentification, au clique sur l'oeil cela met le mot de passe en
-                    clair
-                    <br><br>Si vous avez oublié votre mot de passe, cliquez sur "mot de passe oublié ?"
-                  </p>
-                </div>
+                <p>
+                  Page d'authentification, au clique sur l'oeil cela met le mot de passe en
+                  clair
+                  <br><br>Si vous avez oublié votre mot de passe, cliquez sur "mot de passe oublié ?"
+                </p>
               </div>
-              <div class="image moyenImage">
+              <div class="item">
                 <img src="img/gsb/partie2/2.png">
-                <div class="details moyenDetails">
-                  <p style="color: white;">Entrez votre mot de passe pour recevoir un mail de réinitialisation<br>
+                <p>
+                  Entrez votre mot de passe pour recevoir un mail de réinitialisation<br>
                     Si vous vous souvenez de votre mot de passe, cliquez sur "Connectez vous "
-                  </p>
-                </div>
+                </p>
               </div>
             </div>
           </div>
@@ -226,32 +215,26 @@
 
           <!------------------Ajout d'un compte-rendu--------------------->
           <div id="Partie2-2" class="w3-container w3-border city2" style="display:none">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/gsb/partie2/7.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Liste des comptes-rendus réalisés par le visiteur
-                    <br>Pour ajouter un compte rendu cliquez sur "Ajouter un compte-rendu"
-                  </p>
-                </div>
+                <p>
+                  Liste des comptes-rendus réalisés par le visiteur
+                  <br>Pour ajouter un compte rendu cliquez sur "Ajouter un compte-rendu"
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie2/9.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Renseignez les champs voulu
+                <p>
+                  Renseignez les champs voulu
                     <br>Puis cliquez sur valider pour finaliser la création
-                  </p>
-                </div>
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie2/10.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Un message sera affiché pour vous notifier de la bonne création du compte-rendu
-                  </p>
-                </div>
+                <p>
+                  Un message sera affiché pour vous notifier de la bonne création du compte-rendu
+                </p>
               </div>
             </div>
           </div>
@@ -260,68 +243,54 @@
 
           <!------------------Gestion d'un compte-rendu--------------------->
           <div id="Partie2-3" class="w3-container w3-border city2" style="display:none">
-            <div class="gallery">
-              <div class="petiteImage image">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/gsb/partie2/oeil.png">
-                <div class="petitDetails details">
-                  <p style="color: white;">
-                    Detail ou modification d'un compte-rendu
-                  </p>
-                </div>
+                <p>
+                  Detail ou modification d'un compte-rendu
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie2/11.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Detail d'un compte-rendu, avec des boutons de modification, suppression et de retour
-                  </p>
-                </div>
+                <p>
+                  Detail d'un compte-rendu, avec des boutons de modification, suppression et de retour
+                </p>
               </div>
-              <div class="petiteImage image">
+              <div class="item">
                 <img src="img/gsb/partie2/12.png">
-                <div class="petitDetails details">
-                  <p style="color: white;">
-                    Bouton de confirmation de suppression du compte-rendu
-                  </p>
-                </div>
+                <p>
+                  Bouton de confirmation de suppression du compte-rendu
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie2/13.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Modification d'un compte-rendu, avec des boutons pour enregistrer, supprimer et retour
-                  </p>
-                </div>
+                <p>
+                  Modification d'un compte-rendu, avec des boutons pour enregistrer, supprimer et retour
+                </p>
               </div>
             </div>
           </div>
 
           <!------------------Menu profil et aide--------------------->
           <div id="Partie2-4" class="w3-container w3-border city2" style="display:none">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/gsb/partie2/3.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Affichage d'option pour le profil et l'aide
-                  </p>
-                </div>
+                <p>
+                  Affichage d'option pour le profil et l'aide
+                </p>
               </div>
-              <div class="image moyenImage">
+              <div class="item">
                 <img src="img/gsb/partie2/4.png">
-                <div class="details moyenDetails">
-                  <p style="color: white;">
-                    Affichage du profil et des statistiques du visiteur
-                  </p>
-                </div>
+                <p>
+                  Affichage du profil et des statistiques du visiteur
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie2/5.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Page d'aide, avec un numéro et un mail, et un lien vers un mode d'emploi
-                  </p>
-                </div>
+                <p>
+                  Page d'aide, avec un numéro et un mail, et un lien vers un mode d'emploi
+                </p>
               </div>
             </div>
           </div>
@@ -369,41 +338,36 @@
             </p>
           </div>
         </div>
+        
+
+        <div class="w3-bar w3-black">
+          <button class="w3-bar-item w3-button tablink3 w3-red" onclick="openCity3(event,'partie3-1')">Partie Visiteur</button>
+          <button class="w3-bar-item w3-button tablink3" onclick="openCity3(event,'partie3-2')">Partie Comptable</button>
+        </div>
 
         <div class="details-container color-container">
 
-          <div class="w3-bar w3-black">
-            <button class="w3-bar-item w3-button tablink3 w3-red" onclick="openCity3(event,'partie3-1')">Partie Visiteur</button>
-            <button class="w3-bar-item w3-button tablink3" onclick="openCity3(event,'partie3-2')">Partie Comptable</button>
-          </div>
-
           <!------------------Partie Visiteur--------------------->
           <div id="partie3-1" class="w3-container w3-border city3">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/gsb/partie3/visiteur_accueil.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Menu d'accueil, visualisation des demandes de remboursement des 12 derniers mois
-                  </p>
-                </div>
+                <p>
+                  Menu d'accueil, visualisation des demandes de remboursement des 12 derniers mois
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie3/visiteur_demande_actuel.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Affichage et modification de la demande de remboursement du mois actuel,
+                <p>
+                  Affichage et modification de la demande de remboursement du mois actuel,
                     <br>avec la possibilité d'ajouter des frais hors forfait, d'en modifier ou supprimer un
-                  </p>
-                </div>
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie3/visiteur_demande_avant.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Affichage d'une ancienne demande, avec les frais hors forfait refusés
-                  </p>
-                </div>
+                <p>
+                  Affichage d'une ancienne demande, avec les frais hors forfait refusés
+                </p>
               </div>
             </div>
           </div>
@@ -413,31 +377,25 @@
 
           <!------------------Partie Comptable--------------------->
           <div id="partie3-2" class="w3-container w3-border city3" style="display:none">
-            <div class="gallery">
-              <div class="image grandImage">
+            <div class="masonry">
+              <div class="item">
                 <img src="img/gsb/partie3/comptable_accueil.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Historique des demandes de remboursement de tous les visiteurs du même secteur que lui
-                  </p>
-                </div>
+                <p>
+                  Historique des demandes de remboursement de tous les visiteurs du même secteur que lui
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie3/comptable_accueil_liste.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Possibilité de choisir l'un des 12 derniers mois, pour afficher la liste des demandes correspondant au mois sélectionné
-                  </p>
-                </div>
+                <p>
+                  Possibilité de choisir l'un des 12 derniers mois, pour afficher la liste des demandes correspondant au mois sélectionné
+                </p>
               </div>
-              <div class="image grandImage">
+              <div class="item">
                 <img src="img/gsb/partie3/comptable_visualisation_demande.png">
-                <div class="details grandDetails">
-                  <p style="color: white;">
-                    Validation par le comptable des demandes de remboursement du mois précédent, ainsi que la validation ou non des frais fors forfait,
+                <p>
+                  Validation par le comptable des demandes de remboursement du mois précédent, ainsi que la validation ou non des frais fors forfait,
                     <br>avec également la possibilité de modifier les frais forfaitaires (si cela nécessite une modification)
-                  </p>
-                </div>
+                </p>
               </div>
             </div>
           </div>
