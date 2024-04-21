@@ -258,7 +258,7 @@ section {
   cursor: pointer;
 }
 
-.btn-color-1,
+.btn-color-1:hover,
 .btn-color-2:hover {
   background: rgb(241 192 67);
   color: white;
