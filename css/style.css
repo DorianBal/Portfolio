@@ -548,7 +548,8 @@ footer p {
   align-items: center;
   position: relative;
   flex-direction: column;
-  z-index: -1; /* Ajoutez cette ligne */
+  z-index: -1;
+  font-size : 5vw;
 }
 
 .element {
