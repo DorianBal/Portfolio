@@ -552,17 +552,23 @@ footer p {
   font-size : 18px;
 }
 
+.element {
+  width: 8vw;
+  padding: 1rem;
+}
+
 @media screen and (max-width: 800px) {
   /* Appliquer une taille de police maximum de 2.5vw */
   .sliderListe li {
      font-size : 2.5vw !important;
   }
+  .element {
+    width: 100px !important;
+    padding: 1rem;
+  }
 }
 
-.element {
-  width: 5vw;
-  padding: 1rem;
-}
+
 
 @keyframes scrolling {
   0% {
