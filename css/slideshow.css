@@ -102,7 +102,7 @@ button{
 .w3-red{
   color: black;
   border-bottom: none;
-  border-left: solid 1px #a3a3a3;
-  border-right: solid 1px #a3a3a3;
-  border-top: solid 1px #a3a3a3;
+  border-left: solid 1px rgb(241 192 67);
+  border-right: solid 1px rgb(241 192 67);
+  border-top: solid 1px rgb(241 192 67);
 }
