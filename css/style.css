@@ -36,6 +36,7 @@ a,
   top: 0;
   background-color: white;
   border-bottom: solid 2px black;
+  z-index: 10;
 }
 
 nav,
@@ -507,5 +508,59 @@ footer p {
     -moz-column-count: 3;
     -webkit-column-count: 3;
     column-count: 3;
+  }
+}
+
+
+#langages {
+  background: radial-gradient(#ffdb70, #f4c346);
+  margin: 0;
+  height: fit-content;
+  padding: 0% !important;
+  position: relative;
+  z-index: 0;
+}
+
+.sliderImages {
+  color: white;
+  font-weight: bold;
+  overflow: hidden;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+.sliderListe {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling 25s linear infinite;
+}
+
+
+.sliderListe li {
+  width: 14vw;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+  z-index: -1; /* Ajoutez cette ligne */
+}
+
+.element {
+  width: 5vw;
+  padding: 1rem;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-14vw * 7)); /* Modifier 6 selon le nombre d'éléments dans la liste */
   }
 }
