@@ -549,7 +549,14 @@ footer p {
   position: relative;
   flex-direction: column;
   z-index: -1;
-  font-size : 2.5vw;
+  font-size : 18px;
+}
+
+@media screen and (max-width: 800px) {
+  /* Appliquer une taille de police maximum de 2.5vw */
+  .sliderListe li {
+     font-size : 2.5vw !important;
+  }
 }
 
 .element {
