@@ -29,6 +29,22 @@ a,
   transition: all 300ms ease;
 }
 
+button{
+  border: none;
+  color: #717171;
+}
+
+.w3-bar{
+  font-size: 0;
+}
+.w3-red{
+  color: black;
+  border-bottom: none;
+  border-left: solid 1px rgb(241 192 67);
+  border-right: solid 1px rgb(241 192 67);
+  border-top: solid 1px rgb(241 192 67);
+}
+
 /* Acceuil NAV */
 
 #navBar {
