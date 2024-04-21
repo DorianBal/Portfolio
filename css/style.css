@@ -40,9 +40,9 @@ button{
 .w3-red{
   color: black;
   border-bottom: none;
-  border-left: solid 1px rgb(216 216 216);
-  border-right: solid 1px rgb(216 216 216);
-  border-top: solid 1px rgb(216 216 216);
+  border-left: solid 1px rgb(230 230 230);
+  border-right: solid 1px rgb(230 230 230);
+  border-top: solid 1px rgb(230 230 230);
 }
 
 /* Acceuil NAV */
@@ -326,7 +326,7 @@ section {
 .details-container {
   flex: 1;
   background: white;
-  border: rgb(216 216 216) 0.1rem solid;
+  border: rgb(230 230 230) 0.1rem solid;
   text-align: center;
   box-shadow: 2px 2px 4px 0 #ccc;
 }
@@ -384,7 +384,7 @@ article .icon {
 }
 
 .color-container {
-  border-color: rgb(216 216 216);
+  border-color: rgb(230 230 230);
   background: rgb(250, 250, 250);
 }
 
